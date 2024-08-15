@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+
+h1 {
+    font-family: "Kalam", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    background-color: darkred;
+}
+main {
+    background-color: darkgreen;
+}
+aside {
+    background-color: darkgoldenrod;
+}
+footer {
+    background-color: rgb(36, 74, 144);
+}
+
+/* Diseño responsivo con media queries, movile */
+@media (max-width: 600px) {
+    /*body {
+      background: rgb(12, 59, 12);
+    } */
+    #container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+}
+}
+
+/* Diseño responsivo con media queries, tablet para arriba */
+@media (min-width: 600px) {
+    /*body {
+      background: rgb(176, 175, 175);
+    } */
+
+    #container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        grid-template-areas: 
+        "cabeza cabeza cabeza"
+        "principal principal lado"
+        "pie pie pie"
+        ;
+    }
+    header {
+        grid-area: cabeza;
+    }
+    main {
+        grid-area: principal;
+    }
+    aside {
+        grid-area: lado;
+        /*grid-area: 1 / 2 / 3 / 4;*/
+    }
+    footer {
+        grid-area: pie;
+    }
+}
+
