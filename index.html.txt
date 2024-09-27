@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a mi sitio personal de Harry Potter. Descubre curiosidades, personajes y más sobre el mundo mágico.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Harry+Potter&display=swap" rel="stylesheet">
+    <title>Mi Sitio de Harry Potter</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Harry Potter', cursive;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background: #7a6e56;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .item {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #7a6e56;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mi Mundo de Harry Potter</h1>
+    <nav>
+        <a href="#personajes">Personajes</a>
+        <a href="#hechizos">Hechizos</a>
+        <a href="#curiosidades">Curiosidades</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="item" id="personajes">
+        <h2>Personajes</h2>
+        <p>Conoce a tus personajes favoritos como Harry, Hermione y Ron.</p>
+    </div>
+    <div class="item" id="hechizos">
+        <h2>Hechizos</h2>
+        <p>Aprende sobre los hechizos más icónicos de la saga.</p>
+    </div>
+    <div class="item" id="curiosidades">
+        <h2>Curiosidades</h2>
+        <p>Descubre datos sorprendentes del mundo mágico.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Mi Sitio de Harry Potter</p>
+</footer>
+
+</body>
+</html>
